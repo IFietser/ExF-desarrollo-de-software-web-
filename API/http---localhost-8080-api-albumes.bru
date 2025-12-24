@@ -1,0 +1,26 @@
+meta {
+  name: http://localhost:8080/api/albumes
+  type: http
+  seq: 1
+}
+
+put {
+  url: http://localhost:8080/api/albumes/694b59b14efd9cf1d1d7f2fc
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nombre": "Album Mundial 2026",
+    "imagenUrl": "https://ejemplo.com/album2.png",
+    "fechaLanzamiento": "2026-12-24",
+    "tipoLaminas": "Futbol"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
